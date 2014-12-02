@@ -1,0 +1,25 @@
+{
+  "name": "leblanc",
+  "version": "0.0.0",
+  "description": "Front-end dashboard for mysensors with jill/jenny",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test-cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geek/leblanc.git"
+  },
+  "keywords": [
+    "hapi",
+    "views",
+    "react",
+    "mysensors"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geek/leblanc/issues"
+  },
+  "homepage": "https://github.com/geek/leblanc"
+}
