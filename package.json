@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/geek/leblanc/issues"
   },
-  "homepage": "https://github.com/geek/leblanc"
+  "homepage": "https://github.com/geek/leblanc",
+  "devDependencies": {
+    "code": "^1.2.1",
+    "hapi": "^8.0.0-rc8",
+    "jill": "^1.1.0",
+    "lab": "^5.1.0"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "hoek": "^2.10.0"
+  }
 }
