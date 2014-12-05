@@ -3,6 +3,12 @@
     $.jill = $.jill || {};
 
     $.jill.init = function (settings) {
-        alert(settings.apiUrl);
-    }
+
+        this.settings = settings;
+    };
+
+    $.jill.getRadios = function (callback) {
+
+        $.getJSON(this.settings.apiUrl + '/radios', callback);
+    };
 })(jQuery);
