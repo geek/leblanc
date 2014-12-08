@@ -24,7 +24,7 @@
   "homepage": "https://github.com/geek/leblanc",
   "devDependencies": {
     "code": "^1.2.1",
-    "hapi": "^8.0.0-rc8",
+    "hapi": "^8.0.0-rc9",
     "jill": "^1.1.0",
     "lab": "^5.1.0"
   },
