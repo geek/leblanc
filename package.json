@@ -1,6 +1,6 @@
 {
   "name": "leblanc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Front-end dashboard for mysensors with jill/jenny",
   "main": "index.js",
   "scripts": {
