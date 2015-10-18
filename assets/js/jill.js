@@ -5,6 +5,7 @@
 
     $.jill.init = function (settings) {
 
+        var self = this;
         this.settings = settings;
 
         this._data = this._data || {};
@@ -12,6 +13,25 @@
         if (settings.logCount) {
             this.populateLogCount();
         }
+
+        R(function (require, module, exports) {
+
+            var Nes = require('nes');
+            self._client = new Nes.Client('ws://localhost:8080');
+
+            self._client.connect(function (err) {
+
+                if (err) {
+                  console.error(err);
+                  return;
+                }
+
+                self._client.request('boards', function (err, payload) {
+
+                    console.log(err || payload);
+                });
+            });
+        });
     };
 
 

@@ -14,20 +14,14 @@
     <!-- Bootstrap Core CSS -->
     <link href="3rd-party/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="3rd-party/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="3rd-party/css/plugins/timeline.css" rel="stylesheet">
-
     <!-- Custom CSS -->
-    <link href="3rd-party/css/sb-admin-2.css" rel="stylesheet">
+    <link href="3rd-party/css/sb-admin.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="3rd-party/css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="3rd-party/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="3rd-party/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Font Overrides -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -38,8 +32,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- jQuery -->
     <script src="3rd-party/js/jquery.js"></script>
 </head>
 
@@ -48,33 +40,41 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-inverse navbar-fixed-left" role="navigation">
 
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/boards"><i class="fa fa-rocket-o fa-fw"></i> Boards<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                {{#each boards}}
-                                <li>
-                                    <a href="/board/{{this.id}}"> {{this.name}} ({{this.addonCount}} addons)</a>
-                                </li>
-                                {{/each}}
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="/logs"><i class="fa fa-archive fa-fw"></i> Logs</a>
-                        </li>
-                        <li>
-                            <a href="/commands"><i class="fa fa-terminal fa-fw"></i> Commands</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">My Sensors</a>
+          </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav side-nav">
+                  <li>
+                      <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="/boards"><i class="fa fa-rocket-o fa-fw"></i> Boards<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          {{#each boards}}
+                          <li>
+                              <a href="/board/{{this.id}}"> {{this.name}} ({{this.addonCount}} addons)</a>
+                          </li>
+                          {{/each}}
+                      </ul>
+                      <!-- /.nav-second-level -->
+                  </li>
+                  <li>
+                      <a href="/logs"><i class="fa fa-archive fa-fw"></i> Logs</a>
+                  </li>
+                  <li>
+                      <a href="/commands"><i class="fa fa-terminal fa-fw"></i> Commands</a>
+                  </li>
+              </ul>
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
@@ -99,24 +99,16 @@
     </div>
     <!-- /#wrapper -->
 
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="3rd-party/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="3rd-party/js/plugins/metisMenu/metisMenu.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
     <script src="3rd-party/js/plugins/morris/raphael.min.js"></script>
     <script src="3rd-party/js/plugins/morris/morris.min.js"></script>
-    <script src="3rd-party/js/plugins/morris/morris-data.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="3rd-party/js/sb-admin-2.js"></script>
+    <script src="3rd-party/js/require1k.min.js"></script>
 
     <!-- Jill API -->
     <script src="js/jill.js"></script>
-
 </body>
 
 </html>

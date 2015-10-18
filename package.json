@@ -22,14 +22,20 @@
     "url": "https://github.com/geek/leblanc/issues"
   },
   "homepage": "https://github.com/geek/leblanc",
+  "peerDependencies": {
+    "hapi": ">=10.0.0"
+  },
   "devDependencies": {
-    "code": "^1.2.1",
-    "hapi": "^8.0.0-rc9",
-    "jill": "^1.1.0",
-    "lab": "^5.1.0"
+    "code": "1.x.x",
+    "hapi": "10.x.x",
+    "inert": "3.x.x",
+    "jill": "1.x.x",
+    "lab": "6.x.x",
+    "nes": "1.x.x",
+    "vision": "3.x.x"
   },
   "dependencies": {
-    "handlebars": "^2.0.0",
-    "hoek": "^2.10.0"
+    "handlebars": "4.0.x",
+    "hoek": "2.x.x"
   }
 }
