@@ -30,7 +30,7 @@
                         <i class="fa fa-archive fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge" id="logs-count">0</div>
+                        <div class="huge" id="logs-count">{{logCount}}</div>
                         <div>Logs</div>
                     </div>
                 </div>
@@ -46,27 +46,29 @@
     </div>
 </div>
 
-<!-- /.col-lg-8 -->
-<div class="col-lg-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <i class="fa fa-bell fa-fw"></i> Sensor Readings
-        </div>
-        <!-- /.panel-heading -->
-        <div class="panel-body">
-            <div class="list-group">
-                {{#each readings}}
-                    <a href="#" class="list-group-item">
-                        <i class="fa fa-{{this.type}} fa-fw"></i> {{this.title}}
-                        <span class="pull-right text-muted small"><em>{{this.time}}</em></span>
-                    </a>
-                {{/each}}
+<div class="row">
+    <!-- /.col-lg-8 -->
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bell fa-fw"></i> Sensor Readings
             </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="list-group">
+                    {{#each readings}}
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-{{this.icon}} fa-fw"></i> {{this.title}}
+                            <span class="pull-right text-muted small"><em>{{this.time}}</em></span>
+                        </a>
+                    {{/each}}
+                </div>
+            </div>
+            <!-- /.panel-body -->
         </div>
-        <!-- /.panel-body -->
     </div>
+    <!-- /.col-lg-4 -->
 </div>
-<!-- /.col-lg-4 -->
 
 
 <script type="text/javascript">
@@ -77,4 +79,3 @@
         $.jill.init(settings);
     });
 </script>
-

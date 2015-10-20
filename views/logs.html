@@ -1,0 +1,33 @@
+<!-- /.col-lg-8 -->
+<div class="col-lg-8">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-bell fa-fw"></i> Logs
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="list-group">
+                {{#each logs}}
+                    <a href="#" class="list-group-item">
+                        <i class="fa fa-terminal fa-fw"></i>
+                         {{this.message}}
+                        <span class="pull-right text-muted small"><em>{{this.time}}</em></span>
+                    </a>
+                {{/each}}
+            </div>
+        </div>
+        <!-- /.panel-body -->
+    </div>
+</div>
+<!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var settings = {{{ settings }}};
+
+        $.jill.init(settings);
+    });
+</script>
